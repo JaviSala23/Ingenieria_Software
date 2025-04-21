@@ -1,64 +1,122 @@
 # 📘 Clase 3 – Software en Sistemas Complejos
 
+---
+
+## 🎯 Objetivos de la clase
+
+- Comprender qué se entiende por sistema complejo y sistema sociotécnico.
+- Analizar cómo se inserta el software en estos sistemas más amplios.
+- Reflexionar sobre los desafíos técnicos, humanos y organizacionales involucrados.
+- Introducir el concepto de propiedades emergentes.
+- Dar ejemplos reales de sistemas críticos y su impacto.
+
+---
+
 ## 🧠 ¿Qué es un sistema complejo?
 
-Un sistema complejo es un conjunto de elementos interrelacionados que interactúan de formas no lineales, impredecibles y a menudo emergentes. Estos sistemas pueden ser físicos, sociales, biológicos o computacionales. En el ámbito del software, nos enfocamos en **sistemas sociotécnicos**: aquellos que combinan aspectos tecnológicos (hardware/software) con procesos sociales (usuarios, organizaciones, normas).
-
-### 🎯 Ejemplos de sistemas complejos:
-- Sistemas de gestión hospitalaria.
-- Control de tráfico aéreo.
-- Plataformas bancarias globales.
-- Redes sociales a gran escala.
-- Sistemas embebidos críticos (como una bomba de insulina).
+Un **sistema complejo** es una colección de componentes interdependientes que interactúan para alcanzar un objetivo. Su comportamiento **no puede predecirse solamente a partir de las partes individuales**, ya que surgen propiedades nuevas al integrarlas. Estos sistemas pueden involucrar tecnología, personas, procesos, leyes y más.
 
 ---
 
-## 🧩 Componentes de un sistema sociotécnico
+## 🧩 Tipos de sistemas con software
 
-1. **Hardware**: Dispositivos físicos como servidores, sensores, computadoras personales.
-2. **Software**: Programas que realizan tareas específicas.
-3. **Procesos**: Conjunto de reglas y procedimientos que definen el comportamiento del sistema.
-4. **Usuarios**: Personas que interactúan directa o indirectamente con el sistema.
-5. **Entorno operativo**: El contexto donde se implementa el sistema (leyes, regulaciones, clima, etc.).
-6. **Datos**: Información que circula entre componentes y se utiliza como base para la toma de decisiones.
+### 1. Sistemas técnicos basados en computadora
+- Combinan hardware y software.
+- No incluyen operadores humanos como parte del sistema.
+- Ejemplo: un microondas programado, un videojuego, un televisor.
 
----
-
-## ⚙️ Características de los sistemas de software en entornos complejos
-
-- **Interdependencia**: Cambios en un componente pueden afectar a otros.
-- **Emergencia**: El comportamiento del sistema completo no puede predecirse simplemente conociendo sus partes.
-- **Evolución continua**: Deben adaptarse a requisitos, tecnologías y contextos cambiantes.
-- **Distribución**: Componentes distribuidos físicamente en distintas ubicaciones.
-- **Heterogeneidad**: Combinación de múltiples tecnologías, dispositivos, lenguajes y plataformas.
-- **Alta criticidad**: Fallas pueden causar consecuencias graves o irreversibles.
+### 2. Sistemas sociotécnicos
+- Incluyen sistemas técnicos **+ personas** que interactúan con ellos.
+- Incluyen procesos, estructuras organizativas, regulaciones y cultura laboral.
+- Ejemplo: una plataforma bancaria, un sistema de gestión hospitalaria, el software meteorológico internacional【66:0†IS__Libro_Sommerville_9(2).pdf】.
 
 ---
 
-## 🧪 Ejemplo: Sistema de bomba de insulina
+## ⚙️ Capas de un sistema sociotécnico
 
-Este sistema embebido monitorea el nivel de glucosa en sangre y administra insulina de forma automática. Combina:
-- Sensores que recogen datos biomédicos.
-- Software embebido que decide la dosis adecuada.
-- Hardware que activa la bomba.
-- Interfaz para médicos y pacientes.
-- Registro y monitoreo remoto.
-
-Se considera **crítico para la seguridad**, por lo que su diseño exige alta confiabilidad, pruebas exhaustivas y mecanismos de recuperación ante fallas.
+1. **Equipo:** Dispositivos físicos (hardware).
+2. **Sistema operativo:** Control del hardware.
+3. **Middleware:** Gestión de datos, redes.
+4. **Aplicaciones:** Programas con lógica específica.
+5. **Procesos de negocio:** Flujo de tareas de una organización.
+6. **Organización:** Normas, reglas internas.
+7. **Entorno social:** Leyes, cultura, aspectos humanos y éticos【66:7†IS__Libro_Sommerville_9(2).pdf】.
 
 ---
 
-## 🧠 Implicancias para el desarrollo de software
+## 🧱 Propiedades emergentes
 
-1. **No basta con programar bien**: Es necesario comprender el sistema completo.
-2. **Requiere trabajo interdisciplinario**: Participan médicos, ingenieros, operadores, usuarios finales.
-3. **Alta dependencia del entorno**: Cambios regulatorios, actualización de dispositivos o red pueden afectar el funcionamiento.
-4. **Pruebas realistas**: Deben replicar el entorno real de uso y prever fallas.
+Son aquellas que **no existen en los componentes por separado**. Solo surgen al integrarlos:
+
+- Fiabilidad
+- Seguridad
+- Usabilidad
+- Rendimiento
+- Capacidad de recuperación【66:19†IS__Libro_Sommerville_9(2).pdf】
+
+> Ejemplo: una bicicleta se convierte en un medio de transporte solo cuando todos sus componentes funcionan juntos. Lo mismo pasa con un sistema de software hospitalario.
+
+---
+
+## 🧪 Ejemplo 1: Sistema meteorológico
+
+Un sistema de predicción del clima incluye:
+- Estaciones con sensores.
+- Programas de modelado climático.
+- Bases de datos globales.
+- Operadores y meteorólogos.
+- Gobiernos y usuarios que toman decisiones con base en sus reportes.
+
+👉 No es solo software: es un **sistema sociotécnico internacional**【66:13†IS__Libro_Sommerville_9(2).pdf】.
+
+---
+
+## 🧪 Ejemplo 2: Sistema crítico - Bomba de insulina
+
+- Mide el nivel de glucosa.
+- Calcula y administra automáticamente la insulina.
+- Puede tener consecuencias fatales si falla.
+
+Este tipo de sistemas:
+- Son **críticos para la seguridad**.
+- Requieren **alta confiabilidad**.
+- Deben probarse rigurosamente【66:6†IS__Libro_Sommerville_9(2).pdf】.
+
+---
+
+## 🔍 Implicancias para la Ingeniería de Software
+
+1. **Interdisciplinariedad:** Se debe trabajar con expertos en distintos campos.
+2. **Tolerancia a errores:** Los sistemas deben prever fallos humanos y técnicos.
+3. **Adaptabilidad:** El entorno cambia y el sistema debe evolucionar.
+4. **Validación holística:** No basta con probar el código; se debe probar todo el sistema en conjunto.
+5. **Factores organizacionales:** Cambios en procesos, resistencias internas o políticas pueden afectar el éxito【66:5†IS__Libro_Sommerville_9(2).pdf】.
+
+---
+
+## 🚨 Sistemas heredados
+
+- Son sistemas sociotécnicos antiguos pero fundamentales.
+- Muy costosos de reemplazar.
+- Su mantenimiento es complejo por la obsolescencia y dependencia mutua entre sus componentes【66:4†IS__Libro_Sommerville_9(2).pdf】.
 
 ---
 
 ## 📌 Conclusión
 
-Desarrollar software para sistemas complejos implica mucho más que escribir código. Involucra comprender cómo interactúa ese software con personas, procesos y dispositivos en escenarios reales. La ingeniería de software debe ofrecer métodos para modelar, validar, desplegar y mantener sistemas que son altamente interdependientes y críticos.
+El software no vive en el vacío. Forma parte de sistemas complejos donde interactúa con personas, procesos y tecnologías. Comprender el **contexto** es tan importante como escribir buen código. La Ingeniería de Software moderna requiere una mirada amplia, crítica y multidisciplinaria.
 
-En la próxima clase comenzaremos a **modelar estos sistemas** y a practicar con ejemplos inspirados en los casos del libro de Sommerville.
+---
+
+## 🧠 Actividad sugerida
+
+🔎 **Investigar y presentar** (individual o en grupo):  
+> Elegí un sistema sociotécnico (banco, hospital, red de transporte, app de delivery, etc.)  
+> Describí:
+> - Componentes técnicos y humanos.
+> - Riesgos de fallo y propiedades emergentes.
+> - ¿Qué pasaría si falla el software?
+
+---
+
+
