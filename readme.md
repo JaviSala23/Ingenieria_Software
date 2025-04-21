@@ -19,8 +19,8 @@ La asignatura tiene como propósito que los estudiantes:
 
 ### Unidad 1 - La Complejidad de los Sistemas de Software
 - Introducción al software
+-Perspectiva histórica y enfoques
 - Software en sistemas complejos
-- Perspectiva histórica y enfoques
 - Caracterización y valor del software
 
 ### Unidad 2 - Modelos de Ciclo de Vida
