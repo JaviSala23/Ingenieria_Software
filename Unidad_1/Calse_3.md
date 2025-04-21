@@ -28,7 +28,7 @@ Un **sistema complejo** es una colección de componentes interdependientes que i
 ### 2. Sistemas sociotécnicos
 - Incluyen sistemas técnicos **+ personas** que interactúan con ellos.
 - Incluyen procesos, estructuras organizativas, regulaciones y cultura laboral.
-- Ejemplo: una plataforma bancaria, un sistema de gestión hospitalaria, el software meteorológico internacional【66:0†IS__Libro_Sommerville_9(2).pdf】.
+- Ejemplo: una plataforma bancaria, un sistema de gestión hospitalaria, el software meteorológico internacional.
 
 ---
 
