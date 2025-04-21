@@ -18,17 +18,38 @@ Un **sistema complejo** es una colección de componentes interdependientes que i
 
 ---
 
-## 🧩 Tipos de sistemas con software
+### 🧩 Tipos de sistemas con software
 
-### 1. Sistemas técnicos basados en computadora
-- Combinan hardware y software.
-- No incluyen operadores humanos como parte del sistema.
-- Ejemplo: un microondas programado, un videojuego, un televisor.
+#### 1. Sistemas técnicos basados en computadora
 
-### 2. Sistemas sociotécnicos
-- Incluyen sistemas técnicos **+ personas** que interactúan con ellos.
-- Incluyen procesos, estructuras organizativas, regulaciones y cultura laboral.
-- Ejemplo: una plataforma bancaria, un sistema de gestión hospitalaria, el software meteorológico internacional.
+Estos sistemas están compuestos exclusivamente por **componentes tecnológicos**, es decir, hardware (dispositivos físicos) y software (programas que controlan esos dispositivos). **No contemplan la interacción directa con usuarios humanos** como parte esencial del sistema. Funcionan de forma autónoma una vez configurados, y su comportamiento se basa en lógica predefinida sin intervención humana durante su operación habitual.
+
+📌 *Ejemplos:*  
+- Un microondas que ejecuta un ciclo de cocción programado.  
+- Un videojuego que corre en una consola.  
+- Un sistema de control de temperatura en un horno eléctrico.
+
+Estos sistemas pueden ser complejos en términos técnicos, pero **su entorno está más controlado y definido** en comparación con los sistemas sociotécnicos.
+
+---
+
+#### 2. Sistemas sociotécnicos
+
+Estos sistemas integran componentes técnicos (hardware y software) **junto con elementos humanos, organizativos y sociales**. No se pueden analizar ni diseñar correctamente si se ignoran los procesos, las personas que los usan o los marcos normativos en los que operan.
+
+Incluyen:
+- **Usuarios y operadores**: personas que interactúan con el sistema.
+- **Reglas y procesos de negocio**: cómo debe usarse el sistema en un contexto real.
+- **Aspectos sociales y culturales**: normas de uso, resistencia al cambio, hábitos de trabajo.
+- **Evolución constante**: deben adaptarse a nuevas necesidades, regulaciones y tecnologías.
+
+📌 *Ejemplos:*  
+- Una plataforma bancaria en línea que maneja cuentas, préstamos, clientes y transacciones.  
+- Un sistema de historia clínica digital, con médicos, enfermeros, y regulaciones de salud.  
+- Un sistema global de predicción meteorológica que combina sensores, satélites, datos públicos, software especializado y decisiones gubernamentales.
+
+Estos sistemas son **difíciles de predecir, mantener y validar**, porque sus componentes humanos y sociales son tan importantes como los técnicos.
+
 
 ---
 
