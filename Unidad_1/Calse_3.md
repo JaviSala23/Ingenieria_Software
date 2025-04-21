@@ -88,7 +88,7 @@ Un sistema de predicción del clima incluye:
 - Operadores y meteorólogos.
 - Gobiernos y usuarios que toman decisiones con base en sus reportes.
 
-👉 No es solo software: es un **sistema sociotécnico internacional**【66:13†IS__Libro_Sommerville_9(2).pdf】.
+👉 No es solo software: es un **sistema sociotécnico internacional**.
 
 ---
 
@@ -101,7 +101,7 @@ Un sistema de predicción del clima incluye:
 Este tipo de sistemas:
 - Son **críticos para la seguridad**.
 - Requieren **alta confiabilidad**.
-- Deben probarse rigurosamente【66:6†IS__Libro_Sommerville_9(2).pdf】.
+- Deben probarse rigurosamente.
 
 ---
 
@@ -111,7 +111,7 @@ Este tipo de sistemas:
 2. **Tolerancia a errores:** Los sistemas deben prever fallos humanos y técnicos.
 3. **Adaptabilidad:** El entorno cambia y el sistema debe evolucionar.
 4. **Validación holística:** No basta con probar el código; se debe probar todo el sistema en conjunto.
-5. **Factores organizacionales:** Cambios en procesos, resistencias internas o políticas pueden afectar el éxito【66:5†IS__Libro_Sommerville_9(2).pdf】.
+5. **Factores organizacionales:** Cambios en procesos, resistencias internas o políticas pueden afectar el éxito.
 
 ---
 
@@ -119,7 +119,7 @@ Este tipo de sistemas:
 
 - Son sistemas sociotécnicos antiguos pero fundamentales.
 - Muy costosos de reemplazar.
-- Su mantenimiento es complejo por la obsolescencia y dependencia mutua entre sus componentes【66:4†IS__Libro_Sommerville_9(2).pdf】.
+- Su mantenimiento es complejo por la obsolescencia y dependencia mutua entre sus componentes.
 
 ---
 
