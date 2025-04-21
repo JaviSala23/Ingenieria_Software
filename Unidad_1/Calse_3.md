@@ -33,22 +33,55 @@ Estos sistemas pueden ser complejos en términos técnicos, pero **su entorno es
 
 ---
 
-#### 2. Sistemas sociotécnicos
+### 🧱 Capas de un sistema sociotécnico
 
-Estos sistemas integran componentes técnicos (hardware y software) **junto con elementos humanos, organizativos y sociales**. No se pueden analizar ni diseñar correctamente si se ignoran los procesos, las personas que los usan o los marcos normativos en los que operan.
+Los sistemas sociotécnicos no se limitan al software. Son sistemas organizacionales completos en los que el software forma solo una parte. Están estructurados en múltiples **capas interrelacionadas**, cada una con su función específica y su impacto en el funcionamiento general del sistema.
 
-Incluyen:
-- **Usuarios y operadores**: personas que interactúan con el sistema.
-- **Reglas y procesos de negocio**: cómo debe usarse el sistema en un contexto real.
-- **Aspectos sociales y culturales**: normas de uso, resistencia al cambio, hábitos de trabajo.
-- **Evolución constante**: deben adaptarse a nuevas necesidades, regulaciones y tecnologías.
+#### 🖥️ 1. Equipo (Hardware)
+Incluye todos los **dispositivos físicos** necesarios para que el sistema funcione:
+- Servidores, computadoras, sensores, dispositivos móviles, routers, etc.
+- Proveen la base material sobre la cual se ejecuta el software.
+- Pueden ser locales o distribuidos geográficamente.
 
-📌 *Ejemplos:*  
-- Una plataforma bancaria en línea que maneja cuentas, préstamos, clientes y transacciones.  
-- Un sistema de historia clínica digital, con médicos, enfermeros, y regulaciones de salud.  
-- Un sistema global de predicción meteorológica que combina sensores, satélites, datos públicos, software especializado y decisiones gubernamentales.
+#### 🧠 2. Sistema Operativo
+Es el software que **controla y gestiona los recursos del hardware**:
+- Asigna memoria, administra procesos, controla dispositivos de entrada/salida.
+- Crea una base estable para que otros programas puedan ejecutarse correctamente.
+- Ejemplos: Windows, Linux, Android, macOS.
 
-Estos sistemas son **difíciles de predecir, mantener y validar**, porque sus componentes humanos y sociales son tan importantes como los técnicos.
+#### 🔗 3. Middleware
+Software que actúa como **puente entre el sistema operativo y las aplicaciones**:
+- Facilita la comunicación entre distintos componentes del sistema.
+- Gestiona redes, base de datos, servicios distribuidos, colas de mensajes.
+- Ejemplo: bases de datos, APIs, servidores web, sistemas de autenticación.
+
+#### 💻 4. Aplicaciones
+Programas con lógica específica que permiten al usuario cumplir tareas concretas:
+- Pueden ser interfaces gráficas, aplicaciones móviles o herramientas especializadas.
+- Directamente visibles y utilizadas por el usuario.
+- Ejemplos: sistemas de ventas, historia clínica electrónica, plataformas de e-learning.
+
+#### 🔄 5. Procesos de negocio
+Son los **flujos de trabajo definidos por la organización**:
+- Incluyen reglas, pasos, roles y responsabilidades.
+- El software debe modelar y apoyar estos procesos, no reemplazarlos sin análisis.
+- Ejemplo: flujo de admisión de pacientes en un hospital, procesos de facturación.
+
+#### 🏛️ 6. Organización
+Incluye la **estructura formal** de la institución u organización:
+- Normas internas, políticas, jerarquías, división de responsabilidades.
+- Afecta cómo se usa el sistema, qué cambios se pueden hacer, y qué resistencias pueden surgir.
+- Un software exitoso debe adaptarse a esta capa, no imponerse a la fuerza.
+
+#### 🌍 7. Entorno social
+Conjunto de **factores externos** que influyen en el sistema:
+- Legislación, cultura, idioma, valores sociales, normas éticas y regulaciones gubernamentales.
+- Afecta la manera en que el sistema debe ser diseñado y operado.
+- Ejemplo: una app de salud debe cumplir con leyes de privacidad (como GDPR o Ley de Datos Personales en Argentina).
+
+---
+
+Estas capas no deben analizarse por separado: **interactúan constantemente** y cualquier cambio en una puede afectar a las demás. Por eso, el diseño y la implementación de un sistema sociotécnico requiere una **mirada sistémica e interdisciplinaria**.
 
 
 ---
