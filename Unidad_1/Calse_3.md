@@ -40,7 +40,7 @@ Un **sistema complejo** es una colección de componentes interdependientes que i
 4. **Aplicaciones:** Programas con lógica específica.
 5. **Procesos de negocio:** Flujo de tareas de una organización.
 6. **Organización:** Normas, reglas internas.
-7. **Entorno social:** Leyes, cultura, aspectos humanos y éticos【66:7†IS__Libro_Sommerville_9(2).pdf】.
+7. **Entorno social:** Leyes, cultura, aspectos humanos y éticos.
 
 ---
 
