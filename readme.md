@@ -26,6 +26,7 @@ La asignatura tiene como propósito que los estudiantes:
 ### Unidad 2 - Modelos de Ciclo de Vida
 - Perspectivas del proceso de desarrollo
 - Modelos: Cascada, Incremental, Prototipado, Espiral
+- Modelos ágiles
 - Comparativa y análisis crítico
 
 ### Unidad 3 - Tecnologías del Software
