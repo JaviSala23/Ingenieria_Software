@@ -20,7 +20,7 @@ El nombre "cascada" hace referencia al flujo descendente, como una caída de agu
 
 ---
 
-## 🔄 Etapas del Modelo en Cascada (explicadas en profundidad)
+## 🔄 Etapas del Modelo en Cascada 
 
 ### 1. 📋 Recolección y Análisis de Requisitos
 
