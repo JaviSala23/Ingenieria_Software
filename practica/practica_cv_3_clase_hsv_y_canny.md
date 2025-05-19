@@ -43,6 +43,39 @@ A diferencia del modelo RGB (Rojo, Verde, Azul), que mezcla colores directamente
 - Valor alto: color claro o brillante.
 
 ---
+## 🌈 Rango visual de tonos (Hue)
+
+La siguiente imagen muestra cómo cambia el color al variar el valor de **Hue (H)** mientras la saturación y el valor permanecen al máximo (S=255, V=255):
+
+![Mapa HSV](hsv_colormap.png)
+
+### 📏 Valores típicos de Hue en OpenCV (0 a 179)
+
+| Color       | Hue (aprox.) |
+|-------------|--------------|
+| Rojo        | 0 o 179      |
+| Naranja     | 10 - 20      |
+| Amarillo    | 20 - 30      |
+| Verde       | 35 - 85      |
+| Celeste     | 85 - 100     |
+| Azul        | 100 - 130    |
+| Violeta     | 130 - 160    |
+| Rosa        | 160 - 170    |
+
+> ⚠️ En OpenCV el Hue va de **0 a 179** (no 360), porque trabaja con imágenes de 8 bits.
+
+---
+
+## ✅ ¿Cómo usar estos rangos?
+
+Si querés detectar un color, por ejemplo **verde**, podés definir:
+
+```python
+verde_bajo = np.array([40, 100, 100])
+verde_alto = np.array([80, 255, 255])
+```
+
+Y así crear una **máscara** para detectar píxeles dentro de ese rango de tono, saturación y valor.
 
 ## 🤖 ¿Por qué usar HSV en lugar de RGB?
 
