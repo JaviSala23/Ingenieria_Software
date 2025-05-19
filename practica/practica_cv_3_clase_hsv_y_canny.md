@@ -47,7 +47,7 @@ A diferencia del modelo RGB (Rojo, Verde, Azul), que mezcla colores directamente
 
 La siguiente imagen muestra cómo cambia el color al variar el valor de **Hue (H)** mientras la saturación y el valor permanecen al máximo (S=255, V=255):
 
-![Mapa HSV](recursos/hsv_colormap.pnghsv_colormap.png)
+![Mapa HSV](recursos/hsv_colormap.png)
 
 ### 📏 Valores típicos de Hue en OpenCV (0 a 179)
 
