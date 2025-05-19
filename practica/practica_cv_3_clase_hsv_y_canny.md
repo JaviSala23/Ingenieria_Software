@@ -47,7 +47,7 @@ A diferencia del modelo RGB (Rojo, Verde, Azul), que mezcla colores directamente
 
 La siguiente imagen muestra cómo cambia el color al variar el valor de **Hue (H)** mientras la saturación y el valor permanecen al máximo (S=255, V=255):
 
-![Mapa HSV](hsv_colormap.png)
+![Mapa HSV](recursos/hsv_colormap.pnghsv_colormap.png)
 
 ### 📏 Valores típicos de Hue en OpenCV (0 a 179)
 
@@ -113,6 +113,9 @@ cv2.imshow('Color detectado', resultado)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+## 🌐 Recursos adicionales
+
+- [Ejemplo interactivo de detección de colores en HSV](https://omes-va.com/deteccion-de-colores/)
 
 ---
 
@@ -123,34 +126,101 @@ El modelo HSV es una herramienta poderosa para analizar imágenes de forma más 
 
 ---
 
-## 🔹 Mejora de bordes con Canny (opcional pero recomendado)
+# 🧠 Mejora de Bordes con Canny
 
-### Aplicar Canny sobre la máscara o la imagen filtrada
+## 🔹 ¿Qué es el detector de bordes Canny?
+
+El **algoritmo de Canny** es uno de los métodos más usados en visión por computadora para detectar **bordes** en imágenes. Un borde es una zona donde hay un cambio brusco de intensidad, como la separación entre dos objetos o un objeto y el fondo.
+
+Detectar bordes es esencial para:
+- Identificar formas y contornos.
+- Reconocer objetos.
+- Analizar estructuras en imágenes.
+
+---
+
+## ⚙️ ¿Cómo funciona Canny? (Etapas del algoritmo)
+
+1. **Reducción de ruido (filtro Gaussiano):**
+   - Se suaviza la imagen para evitar detectar bordes falsos.
+   ```python
+   suavizada = cv2.GaussianBlur(imagen, (5, 5), 0)
+   ```
+
+2. **Cálculo del gradiente:**
+   - Se mide cómo cambia la intensidad en cada punto (con derivadas).
+
+3. **Supresión de no-máximos:**
+   - Se eliminan los puntos que no forman parte del borde más fuerte.
+
+4. **Umbral por histéresis:**
+   - Se definen dos umbrales:
+     - `umbral_bajo`: ignora cambios leves.
+     - `umbral_alto`: bordes fuertes y seguros.
+   - Píxeles intermedios se aceptan solo si están conectados a bordes fuertes.
+
+---
+
+## 🔧 Aplicar Canny en OpenCV
 
 ```python
+import cv2
+
 canny = cv2.Canny(mascara, 100, 200)
 cv2.imshow('Bordes Canny sobre mascara', canny)
+```
+
+- `100`: umbral inferior.
+- `200`: umbral superior.
+- Estos valores deben ajustarse dependiendo de la imagen.
+
+---
+
+## 📌 Recomendaciones prácticas
+
+- Siempre aplicar un **filtro de suavizado** (como `GaussianBlur`) antes de usar Canny.
+- Se puede aplicar Canny sobre:
+  - Una imagen en **escala de grises**.
+  - Una **máscara de color** generada con HSV.
+
+Ejemplo completo:
+
+```python
+gris = cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)
+suave = cv2.GaussianBlur(gris, (5, 5), 0)
+bordes = cv2.Canny(suave, 100, 200)
+cv2.imshow('Bordes', bordes)
 ```
 
 ---
 
 ## 🧪 Actividad práctica
 
-1. Usar una imagen con varios objetos de diferentes colores.
-2. Detectar y aislar un color específico usando HSV.
-3. Aplicar Canny a la imagen segmentada para obtener sus bordes.
-4. Mostrar la imagen original, la máscara, el resultado filtrado y los bordes.
-5. Guardar cada una como: `mascara.jpg`, `filtrado.jpg`, `bordes.jpg`.
+1. Usar una imagen con varios objetos.
+2. Convertirla a escala de grises y suavizarla.
+3. Aplicar Canny y ajustar los umbrales.
+4. Mostrar la imagen original y los bordes.
+5. Guardar el resultado como `bordes.jpg`.
 
 ---
 
-## 🧠 Preguntas para reflexionar
+## 💡 Preguntas para reflexionar
 
-- ¿Qué pasa si la iluminación cambia? ¿Sigue funcionando bien HSV?
-- ¿Qué ventajas tiene HSV frente a RGB?
-- ¿Qué parámetros de Canny conviene ajustar en tu imagen?
+- ¿Qué diferencia hay entre aplicar Canny sobre la imagen en grises o sobre la máscara HSV?
+- ¿Cómo afecta el desenfoque a la calidad de los bordes?
+- ¿Qué pasa si los umbrales son demasiado bajos o demasiado altos?
 
 ---
+
+## ✅ Conclusión
+
+Canny es una herramienta poderosa para extraer los bordes más importantes de una imagen. Usado junto con HSV, permite detectar objetos específicos por color **y** forma, lo cual es clave para construir sistemas de visión robustos.
+
+
+## 🌐 Recursos adicionales
+
+
+- 📦 [Contando objetos aplicando detección de bordes con Canny en Python + OpenCV](https://omes-va.com/contando-objetos-aplicando-deteccion-de-bordes-con-canny-en-python-opencv/)
 
 ## 🔜 Próximo paso
 
