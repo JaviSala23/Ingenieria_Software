@@ -34,23 +34,30 @@ Esta clase no aplica ningún filtro ni procesamiento. Se enfoca en **abrir, visu
 ```python
 import cv2
 
-# 0 suele ser la cámara principal del dispositivo
+# Abrir cámara
 camara = cv2.VideoCapture(0)
 
+# Verificar que la cámara se abrió correctamente
 if not camara.isOpened():
-    print("No se pudo acceder a la cámara")
+    print("No se pudo abrir la cámara.")
     exit()
+
+print("Presioná 'q' para salir.")
 
 while True:
     ret, frame = camara.read()
     if not ret:
+        print("No se pudo leer el frame.")
         break
 
-    cv2.imshow('Cámara en vivo', frame)
+    # Mostrar el frame en una ventana única
+    cv2.imshow('Camara en vivo', frame)
 
+    # Esperar 1 milisegundo y chequear si se presiona 'q'
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
+# Liberar recursos
 camara.release()
 cv2.destroyAllWindows()
 ```
