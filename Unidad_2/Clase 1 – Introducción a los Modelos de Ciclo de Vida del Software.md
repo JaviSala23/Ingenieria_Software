@@ -1,4 +1,4 @@
-# 📘 Clase 4 – Introducción a los Modelos de Ciclo de Vida del Software
+# 📘 Clase 1 – Introducción a los Modelos de Ciclo de Vida del Software
 
 ---
 
