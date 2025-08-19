@@ -29,24 +29,29 @@ La asignatura tiene como propósito que los estudiantes:
 - Modelos ágiles
 - Comparativa y análisis crítico
 
-### Unidad 3 - Tecnologías del Software
+### Unidad 3 - Arquitecturas de Software
+- Introducción a las Arquitecturas
+- Tipos de Arquitectura
+- Patrones y Herramientas de Apoyo
+
+### Unidad 4 - Tecnologías del Software
 - Componentes tecnológicos
 - Métodos de desarrollo
 - Herramientas de soporte
 - Tecnologías estructuradas y orientadas a objetos
 
-### Unidad 4 - Sistemas de Tiempo Real
+### Unidad 5 - Sistemas de Tiempo Real
 - Definiciones y restricciones temporales
 - Pruebas y validación de STR
 - Herramientas CASE y directrices industriales
 
-### Unidad 5 - Gestión del Desarrollo de Software
+### Unidad 6- Gestión del Desarrollo de Software
 - Validación, pruebas y métricas
 - Control de versiones y configuración
 - Planificación, recursos y gestión de riesgos
 - Normativa en la ingeniería de software
 
-### Unidad 6 - Mejora del Proceso y Nuevas Tecnologías
+### Unidad 7 - Mejora del Proceso y Nuevas Tecnologías
 - Mejora continua del proceso de desarrollo
 - Adopción de nuevas tecnologías
 - Gestión del cambio y formación
