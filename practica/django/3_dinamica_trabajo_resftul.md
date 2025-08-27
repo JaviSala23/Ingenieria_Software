@@ -1,5 +1,7 @@
 # ⚙️ Dinámica básica de trabajo con Django REST Framework
 
+![WorkFlow - Django](django.png)
+
 Cuando trabajamos con Django como **framework web** y en especial con **Django REST Framework (DRF)**, los componentes principales que intervienen son:
 
 ---
@@ -108,3 +110,4 @@ urlpatterns = [
 ## ✅ Conclusión
 Django REST Framework proporciona una manera **rápida y organizada** de construir **APIs RESTful**.  
 Gracias al uso de **models, serializers, views y urls**, se puede desarrollar un CRUD completo con muy poco código, manteniendo la arquitectura limpia y escalable.
+
