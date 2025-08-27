@@ -1,5 +1,7 @@
 # 🏗️ Arquitecturas de Software posibles con Django
 
+![Django - arquitecturas posibles](arquietecutras.png)
+
 ## 1. Arquitectura Monolítica
 - **Descripción:** Toda la aplicación está dentro de un mismo proyecto Django, incluyendo vistas, modelos, templates y lógica de negocio.
 - **Casos de uso:** Sitios web empresariales, blogs, sistemas internos.
@@ -69,4 +71,5 @@
 
 # 🚀 Conclusión
 Django es un framework **multipropósito** que permite construir desde aplicaciones **monolíticas simples** hasta **arquitecturas modernas desacopladas** (APIs, microservicios, tiempo real o serverless).  
+
 Gracias a su ecosistema, se adapta tanto a proyectos pequeños como a **plataformas empresariales de gran escala**.
